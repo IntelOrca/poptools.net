@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Editing Sprites</title>
+<body bgcolor="rgb(255,255,223)"
+
+</head>
+<body>
+<h1>Before you start</h1>
+<p>Any Populous editing tools need to be used with care and some knowledge of the the way that Populous works. You can seriously corrupt files using these tools, so make sure that you have adequate backups and you only use the tool on the correct files.</p>
+<p>You may also need to use other editors e.g. a header file editor such as Ted Tycoon's Spell Editor to set allies and the number of tribes available on the level.</p>
+<p>The program should only be used to edit levl????.dat files found in the Populous Levels directory, or equivalent if you have your own map directories.</p>
+
+<h1>Run the program</h1>
+<p>Click on Populous Symmetry Tool to run the program. It is only designed to work on existing correctly formatted levl????.dat files, and is not designed to create one from scratch.</p>
+
+<h1>Load a level file</h1>
+<p>File Open your level file. This is normally levl????.dat in the Populous levels folder, and the program looks for this in the default location. See the following list for the standard level files. You can make some interesting maps by mirroring the supplied levels in one, two, four, or even eight planes</p>
+
+<h1>Mirroring Land and Objects</h1>
+<p>The use of the program is fairly obvious, but there are a few things to note. Firstly when you load a map, it will be displayed in a Populous style world view. If you are used to editing the level files in Hex, you should note that the display is upside down i.e. in a Hex editor the x,y coordinates 0,0 are in bottom left of the map, but in the Populous game view shown by the Symmetry Tool 0,0 is at the top left.</p>
+<p>The tool will mirror from bottom to top and left to right. Therefore if you have both horizontal and vertical axis set, the land and objects in the left hand bottom quadrant will be replicated and all other land/objects lost. In the case of both diagonals, it is the triangle along the left hand vertical edge. If there is no land in these areas, everything will become sea. Of course no damage is done until you save the file, so it is fine to experiment.</p>
+<p>Symmetry lines are shown as a guide to where the program will apply "reflective" symmetry either side of the line. You can turn these lines off with options too. You can also turn off the highlight for the area which will be mirrored.</p>
+<p>You also have the choice whether to mirror land or objects independently. Of course, if you are not careful, you may end up with many of your objects in the sea, and they will drown immediately the level starts.</p>
+
+<h1>Rotating the map</h1>
+
+<p>Rotate map repositions the map data in the level file by a 90 degree clockwise rotation. Repeat this for 180 or 270 degrees. This can help you move an area of the map into the correct position for mirroring. Note that you can rotate the map and objects independently by use of the mirror check boxes.</p>
+<p>When you rotate map objects, the orientation of buildings and scenery are also rotated.</p>
+
+<h1>Moving the map</h1>
+<p>Move map repositions the map data in the level file. This allows you to move the map into the exact position you want before applying symmetry to it. This is useful of you are using an existing map where the part you want to mirror is not in the bottom left quadrant. You can move the map left, right, up or down in fractions of the map's width i.e. from 1/128th to a half of the map's width. Objects are also moved to correspond with the land position.</p>
+
+<h1>Changing object colours</h1>
+<p>Using the "replicate as" option buttons on the Replicate Objects dialog, you can decide how any objects specific to one tribe are mirrored. Rotating clockwise the program will take any Blue objects in the first segment and change them to the selected colour in the next segment (Red by default). Any Red objects found will be changed to Yellow be default etc. Then moving on to the next segment (if it is a four way mirror). It will apply the same rules to create the objects in the next segment round. If you set B to B, R to R, Y to Y and G to G, then none of the colours will be changed when mirrored.</p>
+
+<h1>Trigger Colour</h1>
+<p>Triggers (e.g. as associated with Stoneheads) are set as colour Blue by default, so v1.3 of the Symmetry Tool does not change the colour of these objects.</p>
+
+<h1>Orientation change</h1>
+<p>When you mirror map objects, the orientation of buildings and scenery are also mirrored.</p>
+
+<h1>Saving your file</h1>
+<p>Once happy with the changes you can use Save or SaveAs, but make sure that the files are not read-only. Making a copy of all level files before you start is a good idea.</p>
+
+<h1>Save Image</h1>
+<p>This feature allows you to save what the map image contains. This means it will save every detail in the box, so make sure you turn off symmetry lines etc. if you don't want them</p>
+</body>
+</html>
